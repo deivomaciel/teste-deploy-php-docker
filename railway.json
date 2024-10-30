@@ -1,0 +1,9 @@
+{
+    "build": {
+      "dockerComposeFile": "docker-compose.yml"
+    },
+    "deploy": {
+      "startCommand": "apache2-foreground"
+    }
+  }
+  
