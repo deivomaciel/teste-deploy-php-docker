@@ -17,7 +17,7 @@
     
         echo "Conexão bem-sucedida!";
 
-        $query = $conn->query("SELECT * from link;");
+        $query = $conn->query("SELECT * from url;");
         $links = $query->fetchAll(PDO::FETCH_ASSOC);
         foreach($links as $link) {
             echo $link['url']."<br>";
