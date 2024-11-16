@@ -4,7 +4,9 @@
         "runtime": "vercel-php@0.7.3"
       }
     },
+    "installCommand": "apt-get update && apt-get install -y libpq-dev && docker-php-ext-install pdo_pgsql",
     "routes": [
       { "src": "/(.*)",  "dest": "/api/index.php" }
     ]
-  }
+}
+
